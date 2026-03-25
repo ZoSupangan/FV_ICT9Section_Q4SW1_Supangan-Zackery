@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q4 Seatwork 1</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <style>
+    body { text-align: center; margin-top: 50px; }
+    h1 { color: darkblue; }
+    p { font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <h2>Enter your credentials</h2>
+  <p>Use the form below to log in.</p>
+
+
+  <form class="container">
+    <input type="text" id="username" class="form-control mb-2" placeholder="Username">
+    <input type="password" id="password" class="form-control mb-2" placeholder="Password">
+    <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+  </form>
+
+
+  <details>
+    <summary>Show Instructions</summary>
+    <p>Enter your username and password. Click Login.</p>
+  </details>
+
+  <script>
+             // my variables
+    var correctUser = "student";
+    var correctPass = "grade9";
+
+    // Function with Conditional Statements
+    function login() {
+      var user = document.getElementById("username").value;
+      var pass = document.getElementById("password").value;
+
+      // Check credentials
+      if (user === correctUser & pass === correctPass) {
+        window.write("Login Successful!");
+      } else {
+        window.alert("Invalid credentials. Try again.");
+      }
+    }
+
+    // Comment: This function checks if the username and password are correct
+  </script>
+
+</body>
+</html>
